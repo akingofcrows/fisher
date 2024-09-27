@@ -3,6 +3,7 @@ const { Server } = require('socket.io');
 
 // Create HTTP server
 const server = http.createServer();
+const port = process.env.PORT || 8080;
 const io = new Server(server, {
     cors: {
         origin: "*", // Update to your actual client URL and port
