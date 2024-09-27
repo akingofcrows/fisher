@@ -7,7 +7,6 @@ const port = process.env.PORT || 8080;
 const io = new Server(server, {
     cors: {
         origin: "http://98.24.120.251:8081", // Update to your actual client URL and port
-, // Update to your actual client URL and port
         methods: ["GET", "POST"],
         credentials: true, // Ensure credentials support if needed
     }
